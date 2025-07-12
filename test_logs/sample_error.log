@@ -1,0 +1,8 @@
+[2025-07-10 12:00:01] INFO — Starting service...
+[2025-07-10 12:00:02] ERROR — TimeoutError: Service A took longer than 30s to respond
+Traceback (most recent call last):
+  File "main.py", line 42, in run
+    response = requests.get(url, timeout=30)
+  File "requests/api.py", line 75, in get
+    return request('get', url, **kwargs)
+requests.exceptions.Timeout: The request timed out
